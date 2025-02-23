@@ -7,8 +7,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('home'),),
-      body: Container(
-        child: Text('home page'),
+      body: Column(
+        //crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+
+          Container(
+            child: Text('home page'),
+          ),
+        ],
       ),
     );
   }
