@@ -14,7 +14,8 @@ class AppTheme
         ))
       )
     ),
-    primaryColor: AppColors.mainLightColor,
+    primaryColor: AppColors.secondaryColor,
+      colorScheme:ColorScheme.light(primary: AppColors.mainDarkColor) ,
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
@@ -33,7 +34,7 @@ class AppTheme
       hintStyle: AppStyles.greyNormal16
     ),
     textTheme: const TextTheme(
-      titleMedium: AppStyles.whiteBold16,
+      titleMedium: AppStyles.blackBold16,
       bodyMedium: AppStyles.whiteNormal16,
     ),
     appBarTheme: AppBarTheme(
@@ -43,6 +44,8 @@ class AppTheme
   );
   static ThemeData darkTheme=ThemeData(
       scaffoldBackgroundColor: AppColors.mainDarkColor,
+      colorScheme:ColorScheme.light(primary: AppColors.mainLightColor) ,
+
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor: const WidgetStatePropertyAll(AppColors.secondaryColor),
@@ -57,7 +60,7 @@ class AppTheme
               )
           )
       ),
-      primaryColor: AppColors.mainDarkColor,
+      primaryColor: AppColors.secondaryColor,
       inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
@@ -77,7 +80,7 @@ class AppTheme
       ),
       textTheme: const TextTheme(
         titleMedium: AppStyles.whiteBold16,
-        bodyMedium: AppStyles.whiteNormal16,
+        bodyMedium: AppStyles.blackNormal16,
       ),
       appBarTheme: AppBarTheme(
           color: AppColors.mainDarkColor,

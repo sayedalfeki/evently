@@ -1,3 +1,8 @@
 {
-"language":"Language"
+"language":"Language",
+"theme":"Theme",
+"english":"English",
+"arabic":"Arabic",
+"dark":"Dark",
+"light":"Light"
 }
